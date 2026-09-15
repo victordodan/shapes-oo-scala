@@ -23,9 +23,20 @@ class TestBoundingBox:
   def testSimpleLocation(): Unit =
     testBoundingBox(simpleLocation, 70, 30, 80, 120)
 
+  @Test
+  def testSimpleEllipse(): Unit =
     testBoundingBox(simpleEllipse, -50, -30, 100, 60)
+
+  @Test
+  def testBasicGroup(): Unit =
     testBoundingBox(basicGroup, -50, -30, 100, 70)
+
+  @Test
+  def testSimpleGroup(): Unit =
     testBoundingBox(simpleGroup, 150, 70, 350, 280)
+
+  @Test
+  def testComplexGroup(): Unit =
     testBoundingBox(complexGroup, 30, 60, 470, 320)
 
 end TestBoundingBox
